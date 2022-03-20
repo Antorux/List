@@ -63,6 +63,7 @@ int& List::operator[](const int index)
 void List::Pop_Front()
 {
     Node* temp = head;
+    cout << "Извлечен элемент:" << head->data << endl;
     head = head->pNext;
     delete temp;
 
